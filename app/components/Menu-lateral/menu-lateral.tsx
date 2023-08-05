@@ -1,9 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
-
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 export default function MenuLateral() {
-    
     return(
         <main>
             <div className="menuLateral">
@@ -16,31 +15,31 @@ export default function MenuLateral() {
 
                     <div>
                         <div className="relative right-[150px] top-[300px] pb-10">
-                            <Link className="gap-2 flex flex-row" href='/../pages/caixa-de-entrada/caixa-de-entrada'>                                                           
+                            <Link href='/../../pages/inbox' className="gap-2 flex flex-row">                                
                                 <Image src={"/../public/icons/caixa-de-entrada.png"} width={40} height={40} alt=""/>
-                                <h3 className="pt-1 font-semibold text-lg">Caixa de Entrada</h3>                            
+                                <h3 className="pt-1 font-semibold text-lg">Caixa de Entrada</h3>                                                                          
                             </Link>
                         </div>
 
                         <div className="relative right-[150px] top-[300px] pb-10">
-                            <a className="gap-2 flex flex-row" href="">
+                            <Link className="gap-2 flex flex-row" href="/../../pages/estatistica">
                                 <Image className="" src={"/../public/icons/lines.png"} width={40} height={40} alt=""/>
                                 <h3 className="pt-2 font-semibold text-lg ">Estatística</h3>
-                            </a>
+                            </Link>
                         </div>
 
                         <div className="relative right-[150px] top-[300px] pb-10">
-                            <a className="gap-2 flex flex-row" href="">
+                            <Link className="gap-2 flex flex-row" href="/../../pages/calendario">
                                 <Image className="" src={"/../public/icons/calendar.png"} width={40} height={40} alt=""/>
                                 <h3 className="pt-1 font-semibold text-lg">Calendário</h3>
-                            </a>
+                            </Link>
                         </div>
 
                         <div className="relative right-[150px] top-[300px]">
-                            <a className="gap-2 flex flex-row" href="">
+                            <Link className="gap-2 flex flex-row" href="/../../pages/rh">
                                 <Image className="" src={"/../public/icons/rh.png"} width={40} height={40} alt=""/>
                                 <h3 className="pt-1 font-semibold text-lg">RH</h3>
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>

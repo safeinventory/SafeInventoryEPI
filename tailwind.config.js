@@ -15,7 +15,7 @@ module.exports = {
       colors: {
         'azul': '#2E4052',
         'amarelo': '#FFC857',
-        'amareloI': '#FFE9BC',
+        'amareloI': '#FFE9BC',        
       },
     },
   },

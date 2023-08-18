@@ -1,3 +1,4 @@
+import MenuLateral from "@/app/components/Menu-lateral/menu-lateral";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -5,7 +6,9 @@ export default function CaixaDeEntrada() {
     
     return(
         <main>
-            <h1 className="text-red">teste</h1>
+            <div>
+                <MenuLateral/>
+            </div>
         </main>
     )
 }
